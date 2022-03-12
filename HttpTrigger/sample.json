@@ -1,0 +1,33 @@
+{
+  "specversion": "1.0",
+  "apiversion": "1.0",
+  "type": "",
+  "source": "",
+  "id": "4bfa5e4a-dcc0-4fcf-9329-d86b24f65b56",
+  "time": "2022-03-11 09:37:35",
+  "datacontenttype": "application/json",
+  "traceid": "efb8d8ec-ba7a-4f6b-a50d-b8fabd7ceabf",
+  "spanid": "6a6d0113-297f-41c8-8692-55ea96bb1a6a",
+  "parentspanid": "N/A",
+  "environment": "",
+  "subject": "",
+  "data": {
+    "period_id": "",
+    "soc_id": "",
+    "process_upload_group_id": "",
+    "downloadFileValidation": {
+      "labeltype": "parent/children",
+      "processStep": {
+        "PROC_STEP": []
+      }
+    }
+  },
+  "processid": "efb8d8ec-ba7a-4f6b-a50d-b8fabd7ceabf",
+  "preeventid": "N/A",
+  "task": "",
+  "subtask": "",
+  "userid": "",
+  "companyid": "",
+  "countryid": "",
+  "applicationid": ""
+}

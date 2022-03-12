@@ -1,0 +1,17 @@
+{
+  "name": "gsc-demo-mock",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "jest --coverage --maxWorkers=3 --colors",
+    "test:ci": "jest --ci --coverage --maxWorkers=3 --colors"
+  },
+  "dependencies": {
+    "@azure/identity": "^1.5.0",
+    "@sdh-core/sdh-core-lib": "^2.0.2-SNAPSHOT",
+    "@sdh-core/sdh-core-node-health-check-lib": "^0.1.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {}
+}
