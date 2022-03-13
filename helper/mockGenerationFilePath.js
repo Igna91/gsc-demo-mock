@@ -1,14 +1,12 @@
 
 
-function createfilePath(fileData) {
+function createfilePath(fileData, randomCreateCorrect) {
 
-    const randomBool = Math.random() > 0.5 ? 'OK' : 'KO';
-
-    const applicationId = fileData.applicationid;
-    const sociedad = fileData.applicationid;
-    const periodo = fileData.applicationid;
+    const applicationId = fileData.fields.appName;
+    const sociedad = fileData.fields.soc_id;
+    const periodo = fileData.fields.perido_id;
     const data_timestamp_part = "2022-02-04";
-    const data_date_part = "20220204071644300" ;
+    const data_date_part = "20220204071644300";
     const fileName = "filerandom";
 
 
@@ -16,13 +14,15 @@ function createfilePath(fileData) {
 
 
     const json = JSON.stringify({
-        'downloadFileValidationOut':{
-            'result_load':randomBool,
-            "result":{
-                "outputFileUrl": filePath ,
-                "description": (randomBool)? 'Load Successful' : 'Fault caused by ignorance'
+        'downloadFileValidationOut': {
+            'result_load': randomCreateCorrect,
+            "result": {
+                "outputFileUrl": filePath,
+                "description": (randomCreateCorrect === 'OK' ? 'Load Successful' : 'Fault caused by ignorance')
             }
-    }});
+        }
+    });
+
 
 
     return json

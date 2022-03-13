@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "cd64fbbb-931e-45e4-85b2-2837be4f8b2d",
+		"name": "LT-Mock-validation-log",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LOCAL-api-download-logs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cloudEvent\": {\r\n        \"specversion\": \"1.0\",\r\n        \"apiversion\": \"1.0\",\r\n        \"type\": \"\",\r\n        \"source\": \"jajasoieas\",\r\n        \"id\": \"4bfa5e4a-dcc0-4fcf-9329-d86b24f65b56\",\r\n        \"time\": \"2022-03-11 09:37:35\",\r\n        \"datacontenttype\": \"application/json\",\r\n        \"traceid\": \"efb8d8ec-ba7a-4f6b-a50d-b8fabd7ceabf\",\r\n        \"spanid\": \"6a6d0113-297f-41c8-8692-55ea96bb1a6a\",\r\n        \"parentspanid\": \"N/A\",\r\n        \"environment\": \"local\",\r\n        \"subject\": \"OK\",\r\n        \"data\": {\r\n            \"period_id\": \"22023\",\r\n            \"soc_id\": \"1392\",\r\n            \"process_upload_group_id\": \"880-993209-920912-81981\",\r\n            \"downloadFileValidation\": {\r\n                \"labeltype\": \"parent\",\r\n                \"processStep\": {\r\n                    \"PROC_STEP\": [\"LT\"]\r\n                }\r\n            }\r\n        },\r\n        \"processid\": \"efb8d8ec-ba7a-4f6b-a50d-b8fabd7ceabf\",\r\n        \"preeventid\": \"N/A\",\r\n        \"task\": \"\",\r\n        \"subtask\": \"\",\r\n        \"userid\": \"\",\r\n        \"companyid\": \"\",\r\n        \"countryid\": \"\",\r\n        \"applicationid\": \"LT\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7073/api/mock-validation-logs-fnc",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7073",
+					"path": [
+						"api",
+						"mock-validation-logs-fnc"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
